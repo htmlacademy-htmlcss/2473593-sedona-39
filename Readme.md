@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Александр Силантьев](https://up.htmlacademy.ru/htmlcss/39/user/2473593).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Варнавский] (https://htmlacademy.ru/profile/anton_varnauski).
 
 ---
 
