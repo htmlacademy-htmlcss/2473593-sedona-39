@@ -8,9 +8,9 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="header-nav">
-        <a href="#" class="nav-logo-link"><img src="#" alt="Логотип"></a>
+        <a href="#" class="nav-logo-link"><img src="images/logo.svg" width="140" height="70" alt="Логотип"></a>
         <ul class="nav-list">
           <li class="nav-item active"><a href="index.html" class="nav-item-link">Главная</a> </li>
           <li class="nav-item"><a href="#" class="nav-item-link">О Седоне</a></li>
@@ -18,24 +18,24 @@
         </ul>
         <ul class="nav-user">
           <span class="visually-hidden">Поиск</span>
-          <li class="nav-item"><a href="#" class="nav-item-link"><img src="#" alt="Поиск"></a></li>
+          <li class="nav-item"><a href="#" class="nav-item-link"><img src="images/search.svg" width="44" height="64" alt="Поиск"></a></li>
           <span class="visually-hidden">Избранное</span>
-          <li class="nav-item"><a href="#" class="nav-item-link"><img src="#" alt="Избранное"></a></li>
+          <li class="nav-item"><a href="#" class="nav-item-link"><img src="images/favorite.svg" width="44" height="64" alt="Избранное"></a></li>
         </ul>
       </nav>
       <a href="#" class="header-button">ХОЧУ СЮДА!</a>
     </header>
-    <main class="inner-main">
+    <main class="inner-main" data-test="main">
       <h1 class="inner-title">Гостиницы Седоны</h1>
       <ol class="breadcrumbs">
         <li class="breadcrumbs-list">
-          <a href="index.html" class="breadcrumbs-link"><img src="#" alt="Home"></a>
+          <a href="index.html" class="breadcrumbs-link"><img src="images/home-inner.svg" width="13" height="15" alt="Home"></a>
         </li>
         <li class="breadcrumbs-list">
           <p>Гостиницы</p>
         </li>
       </ol>
-      <section class="filters">
+      <section class="filters" data-test="filter">
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура</legend>
@@ -95,7 +95,7 @@
           </fieldset>
         </form>
       </section>
-      <section class="catalog-hotels">
+      <section class="catalog-hotels" data-test="catalog">
         <h2 class="catalog-hotels-title">Найдено гостиниц: <span>38</span></h2>
         <select class="catalog-hotels-select" aria-label="Сортировка">
           <option value="popular">Сначала популярные</option>
@@ -108,7 +108,7 @@
         <ul class="catalog-hotels-list">
           <li class="catalog-hotels-item">
             <a href="#" class="catalog-hotels-link">
-              <img src="#" alt="Звездное небо">
+              <img src="images/catalog-hotel/hotel-amara.jpg" width="300" height="212" alt="Звездное небо">
               <h3 class="catalog-hotels-title">Amara Resort & Spa</h3>
             </a>
             <p class="catalog-hotels-type">Гостиница</p>
@@ -120,7 +120,7 @@
           </li>
           <li class="catalog-hotels-item">
             <a href="#" class="catalog-hotels-link">
-              <img src="#" alt="Каньон Поко Диабло">
+              <img src="images/catalog-hotel/hotel-villas.jpg" width="300" height="212" alt="Каньон Поко Диабло">
               <h3 class="catalog-hotels-title">Villas at Poco Diablo</h3>
             </a>
             <p class="catalog-hotels-type">Гостиница</p>
@@ -132,7 +132,7 @@
           </li>
           <li class="catalog-hotels-item">
             <a href="#" class="catalog-hotels-link">
-              <img src="#" alt="Каньон Квайл Ин">
+              <img src="images/catalog-hotel/hotel-desert.jpg" width="300" height="212" alt="Каньон Квайл Ин">
               <h3 class="catalog-hotels-title">Desert Quail Inn</h3>
             </a>
             <p class="catalog-hotels-type">Гостиница</p>
@@ -144,7 +144,7 @@
           </li>
           <li class="catalog-hotels-item">
             <a href="#" class="catalog-hotels-link">
-              <img src="#" alt="ГринФри Ин">
+              <img src="images/catalog-hotel/hotel-greentree.jpg" width="300" height="212" alt="ГринТри Ин">
               <h3 class="catalog-hotels-title">GreenTree Inn</h3>
             </a>
             <p class="catalog-hotels-type">Гостиница</p>
@@ -164,7 +164,7 @@
           <li class="pages-item"><a href="#" class="pages-link">10</a></li>
         </ul>
       </section>
-      <section class="subscription">
+      <section class="subscription" data-test="subscribe">
         <h2 class="visually-hidden">Подписка</h2>
         <b>Подпишитесь на рассылку</b>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -173,21 +173,21 @@
           <button class="subscription-button" type="submit">Подписаться</button>
         </form>
       </section>
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <h2 class="visually-hidden">Связаться</h2>
         <ul class="social-list">
           <li class="social-item">
-            <a href="#" class="social-link"><img src="#" alt="Иконка вк"></a>
+            <a href="#" class="social-link"><img src="images/social-footer/social-vk.svg" width="47" height="40" alt="Иконка вк"></a>
           </li>
           <li class="social-item">
-            <a href="#" class="social-link"><img src="#" alt="Иконка телеграмм"></a>
+            <a href="#" class="social-link"><img src="images/social-footer/social-telegram.svg" width="47" height="40" alt="Иконка телеграмм"></a>
           </li>
           <li class="social-item">
-            <a href="#" class="social-link"><img src="#" alt="Иконка ютуб"></a>
+            <a href="#" class="social-link"><img src="images/social-footer/social-youtube.svg" width="47" height="40" alt="Иконка ютуб"></a>
           </li>
         </ul>
         <a href="tel:+78128121212" class="phone-link">+7 (812) 812-12-12</a>
-        <a href="https://htmlacademy.ru" class="htmlacademy-link"><img src="#" alt="Logo HtmlAcademy"></a>
+        <a href="https://htmlacademy.ru" class="htmlacademy-link"><img src="images/logo_htmlacademy.svg" width="115" height="33" alt="Logo HtmlAcademy"></a>
       </footer>
     </main>
   </body>
