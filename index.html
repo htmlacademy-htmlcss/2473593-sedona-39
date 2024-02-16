@@ -9,6 +9,7 @@
   </head>
 
   <body>
+    <div class="site-container">
     <header class="page-header" data-test="header">
       <a href="index.html" class="nav-logo-link">
         <img src="images/logo.svg" width="140" height="70" alt="Логотип">
@@ -40,7 +41,7 @@
       </nav>
       <button class="header-button" type="button">Хочу сюда!</button>
     </header>
-    <main class="page-main" data-test="main">
+    <main class="main-container page-main" data-test="main">
       <section class="hero" data-test="hero">
         <h1 class="visually-hidden">Седона</h1>
         <img src="images/welcome-sedona.svg" width="458" height="352" alt="Добро пожаловать">
@@ -56,6 +57,7 @@
             <p class="advantages-item-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img src="images/architecture.jpg" width="800" height="385" alt="Архитектура Седоны">
           </li>
+          <div class="advantages-container">
           <li class="advantages-item advantages-item-white">
             <h3 class="advantages-item-title">Небольшая площадь</h3>
             <p class="advantages-item-text">Все достопримечательности находятся очень близко</p>
@@ -68,6 +70,7 @@
             <h3 class="advantages-item-title">Мало туристов</h3>
             <p class="advantages-item-text">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
+        </div>
           <li class="advantages-item advantages-item-turquoise">
             <h3 class="advantages-item-title">Там есть мост дьявола</h3>
             <p class="advantages-item-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -79,6 +82,7 @@
         <h2 class="visually-hidden">Услуги</h2>
         <p class="services-description">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
         <p class="services-text">Опытный персонал и качественное обслуживание!</p>
+        <div class="services-container">
         <article class="services-card services-card-grey">
           <img src="#" alt="Жильё">
           <h3 class="services-card-title">Жильё</h3>
@@ -97,6 +101,7 @@
           <p class="services-card-text">Не только китайского,
             но и настоящего местного производства!</p>
         </article>
+      </div>
       </section>
       <section class="hotel" data-test="search">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
@@ -113,8 +118,9 @@
           <button class="subscription-button" type="submit">Подписаться</button>
         </form>
       </section>
+    </main>
       <footer class="page-footer" data-test="footer">
-        <h2 class="visually-hidden">Связаться</h2>
+        <!-- <h2 class="visually-hidden">Связаться</h2> -->
         <ul class="social-list">
           <li class="social-item">
             <a href="#" class="social-link">
@@ -137,7 +143,7 @@
           <img src="images/logo_htmlacademy.svg" width="115" height="33" alt="Logo HtmlAcademy">
         </a>
       </footer>
-    </main>
+    </div>
   </body>
 
 </html>
