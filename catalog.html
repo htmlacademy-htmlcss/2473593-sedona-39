@@ -22,18 +22,28 @@
             <li class="nav-item">
               <a href="#" class="nav-item-link">О Седоне</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav-active-catalog">
               <a href="catalog.html" class="nav-item-link">Гостиницы</a>
             </li>
           </ul>
           <ul class="nav-user">
-            <li class="nav-item">
+            <li class="nav-item-user">
               <a href="#" class="nav-item-link">
+                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="none" viewBox="0 0 20 20">
+                  <path fill="#000"
+                    d="m19.5 18-3.7-3.67c1-1.3 1.7-2.98 1.7-4.87a8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z" />
+                </svg>
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item-user">
               <a href="#" class="nav-item-link">
+                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="17"
+                  fill="none" viewBox="0 0 18 17">
+                  <path fill="#000"
+                    d="M8.9 17a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
+                </svg>
                 <span class="visually-hidden">Избранное</span>
                 <span class="counter">12</span>
               </a>
@@ -48,7 +58,10 @@
           <ol class="breadcrumbs">
             <li class="breadcrumbs-list">
               <a href="index.html" class="breadcrumbs-link">
-                <img src="#" width="13" height="15" alt="Home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none" viewBox="0 0 13 13">
+                  <path fill="#fff" d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" />
+                  <path fill="#fff" d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z" />
+                </svg>
               </a>
             </li>
             <li class="breadcrumbs-list">
@@ -104,8 +117,8 @@
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость, Р:</legend>
-              <label class="filter-ptice-control">От <input  type="text" name="min-price" value="0"></label>
-              <label class="filter-ptice-control">До <input  type="text" name="max-price" value="9000"></label>
+              <label class="filter-ptice-control">От <input type="text" name="min-price" value="0"></label>
+              <label class="filter-ptice-control">До <input type="text" name="max-price" value="9000"></label>
               <button class="button-price-control">
                 <span class="visually-hidden">Линия контроля стоимости</span>
               </button>
@@ -126,20 +139,39 @@
             </select>
             <ul class="catalog-hotels-button">
               <li class="catalog-hotels-view">
-                <a href="#"><img src="#" width="48" height="48" alt="Плитками"></a>
+                <a href="#"><svg class="view-svg" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none"
+                    viewBox="0 0 16 14">
+                    <path fill="#000"
+                      d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
+                  </svg></a>
               </li>
               <li class="catalog-hotels-view">
-                <a href="#"><img src="#" width="48" height="48" alt="Карточками"></a>
+                <a href="#"><svg class="view-svg" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none"
+                    viewBox="0 0 16 14">
+                    <path fill="#000" d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
+                  </svg></a>
               </li>
               <li class="catalog-hotels-view">
-                <a href="#"><img src="#" width="48" height="48" alt="Списками"></a>
+                <a href="#"><svg class="view-svg" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none"
+                    viewBox="0 0 16 14">
+                    <g fill="#000" clip-path="url(#a)">
+                      <path
+                        d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M0 0h16v14H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg></a>
               </li>
             </ul>
           </div>
           <ul class="catalog-hotels-list">
             <li class="catalog-hotels-item">
               <a href="#" class="catalog-hotels-link">
-                <img class="catalog-hotels-img" src="images/catalog-hotel/hotel-amara.jpg" width="300" height="212" alt="Hotel Amara">
+                <img class="catalog-hotels-img" src="images/catalog-hotel/hotel-amara.jpg" width="300" height="212"
+                  alt="Hotel Amara">
                 <h3 class="catalog-hotels-name">Amara Resort & Spa</h3>
               </a>
               <p class="catalog-hotels-type">Гостиница</p>
@@ -147,13 +179,17 @@
               <a href="#" class="catalog-hotels-details">Подробнее</a>
               <button class="catalog-hotels-favorites-button" type="button">В Избранное</button>
               <p class="catalog-hotels-star catalog-hotels-star-4">
+                <svg class="star-svg-four" xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none" viewBox="0 0 18 17">
+                  <path fill="#83B3D3" d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" />
+                </svg>
                 <span class="visually-hidden">4 звезды</span>
               </p>
               <p class="catalog-hotels-rating">Рейтинг: 8.5</p>
             </li>
             <li class="catalog-hotels-item">
               <a href="#" class="catalog-hotels-link">
-                <img class="catalog-hotels-img" src="images/catalog-hotel/hotel-villas.jpg" width="300" height="212" alt="Villas">
+                <img class="catalog-hotels-img" src="images/catalog-hotel/hotel-villas.jpg" width="300" height="212"
+                  alt="Villas">
                 <h3 class="catalog-hotels-name">Villas at Poco Diablo</h3>
               </a>
               <p class="catalog-hotels-type">Гостиница</p>
@@ -161,13 +197,17 @@
               <a href="#" class="catalog-hotels-details">Подробнее</a>
               <button class="catalog-hotels-favorites-button favorites-active" type="button">В Избранном</button>
               <p class="catalog-hotels-star catalog-hotels-star-4">
+                <svg class="star-svg" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none" viewBox="0 0 18 17">
+                  <path fill="#83B3D3" d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" />
+                </svg>
                 <span class="visually-hidden">4 звезды</span>
               </p>
               <p class="catalog-hotels-rating">Рейтинг: 9.2</p>
             </li>
             <li class="catalog-hotels-item">
               <a href="#" class="catalog-hotels-link">
-                <img class="catalog-hotels-img" src="images/catalog-hotel/hotel-desert.jpg" width="300" height="212" alt="Desert">
+                <img class="catalog-hotels-img" src="images/catalog-hotel/hotel-desert.jpg" width="300" height="212"
+                  alt="Desert">
                 <h3 class="catalog-hotels-name">Desert Quail Inn</h3>
               </a>
               <p class="catalog-hotels-type">Гостиница</p>
@@ -175,13 +215,17 @@
               <a href="#" class="catalog-hotels-details">Подробнее</a>
               <button class="catalog-hotels-favorites-button" type="button">В Избранное</button>
               <p class="catalog-hotels-star catalog-hotels-star-3">
+                <svg class="star-svg" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none" viewBox="0 0 18 17">
+                  <path fill="#83B3D3" d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" />
+                </svg>
                 <span class="visually-hidden">3 звезды</span>
               </p>
               <p class="catalog-hotels-rating">Рейтинг: 6.9</p>
             </li>
             <li class="catalog-hotels-item">
               <a href="#" class="catalog-hotels-link">
-                <img class="catalog-hotels-img" src="images/catalog-hotel/hotel-greentree.jpg" width="300" height="212" alt="GreenTree">
+                <img class="catalog-hotels-img" aria-hidden="true" focusable="false" src="images/catalog-hotel/hotel-greentree.jpg" width="300" height="212"
+                  alt="GreenTree">
                 <h3 class="catalog-hotels-name">GreenTree Inn</h3>
               </a>
               <p class="catalog-hotels-type">Гостиница</p>
@@ -189,6 +233,9 @@
               <a href="#" class="catalog-hotels-details">Подробнее</a>
               <button class="catalog-hotels-favorites-button" type="button">В Избранное</button>
               <p class="catalog-hotels-star catalog-hotels-star-2">
+                <svg class="star-svg" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none" viewBox="0 0 18 17">
+                  <path fill="#83B3D3" d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" />
+                </svg>
                 <span class="visually-hidden">2 звезды</span>
               </p>
               <p class="catalog-hotels-rating">Рейтинг: 5.0</p>
