@@ -1,18 +1,16 @@
-
-
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "PT Sans", "Arial", "Sans-serif";
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -30,7 +28,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 24px;
   line-height: 26px;
   color: #333333;
@@ -67,6 +65,7 @@ body {
 }
 
 .nav-logo-link {
+  margin-bottom: -10px;
   margin-right: 44px;
 }
 
@@ -159,12 +158,13 @@ body {
 }
 
 .header-button {
+  font-family: "PT Sans", "Arial", sans-serif;
   margin-left: auto;
   width: 160px;
   height: 36px;
   background-color: #756157;
   border-radius: 4px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 16px;
@@ -179,9 +179,10 @@ body {
 .hero {
   padding-top: 51px;
   background-color: #000000;
-  background-image: url(../images/divider.jpg), url("../images/index-background.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat no-repeat;
+  background-image: url("../images/divider.png"), url("../images/index-background.jpg");
+  background-size: 100% auto, 100% 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom -2px center, center center;
   text-align: center;
   height: 485px;
   margin-bottom: 69px;
@@ -219,13 +220,13 @@ body {
 }
 
 .advantages-container {
-position: relative;
-display: flex;
-flex-direction: column;
-width: 400px;
-min-height: 385px;
-justify-content: center;
-align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  min-height: 385px;
+  justify-content: center;
+  align-items: center;
 }
 
 .advantages-item {
@@ -240,21 +241,21 @@ align-items: center;
 
 .advantages-item-turquoise {
   background-color: #82b3d3;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .advantages-item-turquoise p {
-  color: #FFFFFF
+  color: #ffffff
 }
 
 
 .advantages-item-white {
-  background-color: #83b3d31f;
+  background-color: rgba(131, 179, 211, 0.122);
   color: #000000;
 }
 
 .advantages-item-grey {
-  background-color: #83b3d333;
+  background-color: rgba(131, 179, 211, 0.2);
   color: #000000;
 }
 
@@ -271,9 +272,13 @@ align-items: center;
   content: "";
   width: 60px;
   height: 2px;
-  background-color: #0000004D;
+  background-color: rgba(0, 0, 0, 0.302);
   top: 201px;
   left: 172px;
+}
+
+.title-border-white::after {
+  background-color: rgba(255, 255, 255, 0.302);
 }
 
 .advantages-item-text {
@@ -315,11 +320,11 @@ align-items: center;
 }
 
 .services-card-grey {
-  background-color: #83b3d31f;
+  background-color: rgba(131, 179, 211, 0.122);
   text-align: center;
   max-width: 400px;
   min-height: 385px;
-  padding: 81px 85px;
+  padding: 183px 85px 81px 85px;
 }
 
 .services-card-white {
@@ -327,7 +332,7 @@ align-items: center;
   text-align: center;
   max-width: 400px;
   min-height: 385px;
-  padding: 81px 85px;
+  padding: 183px 85px 81px 85px;
 }
 
 .services-card-title {
@@ -343,6 +348,24 @@ align-items: center;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+}
+
+.services-item-hotel {
+  background-image: url("/images/service/hotel-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center 109px;
+}
+
+.services-item-food {
+  background-image: url("/images/service/food-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center 109px;
+}
+
+.services-item-surprise {
+  background-image: url("/images/service/surprise-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center 109px;
 }
 
 /* ПОИСК ГОСТИНИЦЫ */
@@ -370,6 +393,7 @@ align-items: center;
 }
 
 .hotel-button {
+  font-family: "PT Sans", "Arial", sans-serif;
   display: block;
   margin: 0 auto;
   width: 376px;
@@ -416,10 +440,11 @@ align-items: center;
 }
 
 .subscription-button {
+  font-family: "PT Sans", "Arial", sans-serif;
   width: 232px;
   height: 52px;
   background-color: #82b3d3;
-  border-radius:0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 700;
@@ -431,7 +456,13 @@ align-items: center;
   cursor: pointer;
 }
 
+.subscription-form {
+  display: flex;
+  justify-content: center;
+}
+
 .subscription-email {
+  font-family: "PT Sans", "Arial", sans-serif;
   width: 452px;
   height: 52px;
   border-radius: 4px 0 0 4px;
@@ -439,12 +470,10 @@ align-items: center;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-   background-color: #f2f2f2;
-   padding: 0 0 0 20px;
+  background-color: #f2f2f2;
+  padding: 0 0 0 20px;
 }
-.subscription-email + .subscription-button {
-  margin-right: 0;
-}
+
 /* FOOTER */
 .page-footer {
   display: flex;
@@ -453,13 +482,16 @@ align-items: center;
   padding: 40px 70px 30px 70px;
   min-height: 120px;
 }
+
 .social-list {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 142px;
   margin: 0;
   padding: 0;
 }
+
 .social-item {
   list-style-type: none;
   margin-right: 26px;
@@ -486,30 +518,31 @@ align-items: center;
 /* КАТАЛОГ */
 
 /* ФИЛЬТРЫ */
-.catalog-filter {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.catalog-filter-group {
-  border: none;
-  padding: 40px 70px 73px 70px;
-}
-
-.catalog-filter-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  margin-bottom: 32px;
-}
-
 .filters {
-  background-color: #000000;
+  background-color: rgba(128, 64, 48, 0.863);
   background-image: url("../images/bg-filters.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 56px;
+}
+
+.catalog-filter {
+  display: flex;
+  padding-bottom: 70px;
+}
+
+.container-filters-type {
+  display: flex;
+  padding: 0 0 0 70px;
+}
+
+.container-filters-price {
+display: flex;
+}
+
+.container-filters-title {
+padding: 35px 70px 0 70px;
+margin-bottom: 40px;
 }
 
 .inner-title {
@@ -518,17 +551,16 @@ align-items: center;
   line-height: 78px;
   color: #ffffff;
   margin: 0;
-  padding: 35px 0 0 70px;
-  margin-bottom: 8px;
 }
 
 .breadcrumbs {
-  background-image: url(/images/arrow-breadcrumbs.svg);
+  background-image: url("/images/arrow-breadcrumbs.svg");
   background-repeat: no-repeat;
-  background-position: top 21px left 63px;
+  background-position: top 21px left 22px;
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  margin: 0;
+  padding: 0;
 }
 
 .breadcrumbs-list {
@@ -546,11 +578,29 @@ align-items: center;
   margin-right: 0;
 }
 
+.catalog-filter-group {
+  border: none;
+  margin: 0;
+  margin-right: 70px;
+  padding: 0;
+}
+
+.catalog-filter-group:last-child {
+  margin-right: 0;
+}
+
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  margin-bottom: 32px;
+  padding: 0;
   color: #ffffff;
+}
+
+.catalog-filter-list {
+margin: 0;
+padding: 0;
 }
 
 .catalog-filter-item {
@@ -567,6 +617,7 @@ align-items: center;
 }
 
 .catalog-filter-submit {
+  font-family: "PT Sans", "Arial", sans-serif;
   margin-bottom: 32px;
   width: 191px;
   height: 36px;
@@ -581,6 +632,7 @@ align-items: center;
 }
 
 .catalog-filter-reset {
+  font-family: "PT Sans", "Arial", sans-serif;
   width: 191px;
   height: 36px;
   background-color: transparent;
@@ -619,7 +671,7 @@ align-items: center;
 }
 
 .catalog-hotels-view {
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
   list-style-type: none;
   width: 48px;
@@ -633,10 +685,11 @@ align-items: center;
 }
 
 .view-svg {
-display: block;
+  display: block;
 }
 
 .catalog-hotels-select {
+  font-family: "PT Sans", "Arial", sans-serif;
   width: 292px;
   height: 49px;
   border: 2px solid #e5e5e5;
@@ -710,6 +763,7 @@ display: block;
 }
 
 .catalog-hotels-favorites-button {
+  font-family: "PT Sans", "Arial", sans-serif;
   padding: 8px 0;
   background-color: #82b3d3;
   color: #ffffff;
@@ -792,7 +846,7 @@ display: block;
   font-size: 22px;
   line-height: 26px;
   color: #000000;
-  background-color:transparent;
+  background-color: transparent;
   margin: 0;
 }
 
