@@ -182,12 +182,13 @@ body {
 }
 
 .header-button:focus-visible {
+  outline: none;
   background-color: #615048;
 }
 
 .header-button:active {
   background-color: #756157;
-  color: rgba(255, 255, 255, 0.302);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .header-button:disabled {
@@ -270,7 +271,7 @@ body {
 
 
 .advantages-item-white {
-  background-color: rgba(131, 179, 211, 0.12);
+  background-color: rgba(131, 179, 211, 0.1);
   color: #000000;
 }
 
@@ -293,13 +294,13 @@ body {
   content: "";
   width: 60px;
   height: 2px;
-  background-color: rgba(0, 0, 0, 0.30);
+  background-color: rgba(0, 0, 0, 0.3);
   top: 194px;
   left: 172px;
 }
 
 .title-border-white::after {
-  background-color: rgba(255, 255, 255, 0.302);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .advantages-item-text {
@@ -343,7 +344,7 @@ body {
 }
 
 .services-card-grey {
-  background-color: rgba(131, 179, 211, 0.122);
+  background-color: rgba(131, 179, 211, 0.1);
   text-align: center;
   max-width: 400px;
   height: 385px;
@@ -381,19 +382,19 @@ body {
 .services-item-hotel {
   background-image: url("../images/service/hotel-icon.svg");
   background-repeat: no-repeat;
-  background-position: center 75px;
+  background-position: center 80px;
 }
 
 .services-item-food {
   background-image: url("../images/service/food-icon.svg");
   background-repeat: no-repeat;
-  background-position: center 75px;
+  background-position: center 80px;
 }
 
 .services-item-surprise {
   background-image: url("../images/service/surprise-icon.svg");
   background-repeat: no-repeat;
-  background-position: center 75px;
+  background-position: center 80px;
 }
 
 /* ПОИСК ГОСТИНИЦЫ */
@@ -444,12 +445,13 @@ body {
 }
 
 .hotel-button:focus-visible {
+  outline: none;
   background-color: #615048;
 }
 
 .hotel-button:active {
   background-color: #756157;
-  color: rgba(255, 255, 255, 0.302);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotel-button:disabled {
@@ -509,12 +511,13 @@ body {
 }
 
 .subscription-button:focus-visible {
+  outline: none;
   background-color: #68a2ca;
 }
 
 .subscription-button:active {
   background-color: #82b3d3;
-  color: rgba(255, 255, 255, 0.302);
+  color: rgba(255, 255, 255, 0.30);
 }
 
 .subscription-button:disabled {
@@ -556,8 +559,6 @@ body {
 
 .social-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 142px;
   margin: 0;
   padding: 0;
@@ -576,6 +577,11 @@ body {
   text-decoration: none;
   text-align: center;
   color: #83b3d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 47px;
 }
 
 .phone-link {
@@ -587,27 +593,39 @@ body {
   text-align: center;
 }
 
-.htmlacademy-link:hover,
 .htmlacademy-link:focus {
-  color: #756157;
+  outline: none;
 }
 
 .phone-link:focus,
 .phone-link:hover {
   color: #756157;
+  outline: none;
 }
 
 .phone-link:active {
   color: #756157
 }
 
-.social-link:hover,
-.social-link:focus {
-  color: #68a2ca;
+.social-link:hover path {
+  fill: #68a2ca;
 }
 
-.social-link:active {
-  color: rgba(104, 162, 202, 0.302);
+.social-link:focus path {
+  fill: #68a2ca;
+}
+
+.social-link:active path {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+.social-link:focus-visible path {
+  fill: #68a2ca;
+  border: none;
+}
+
+.social-link:focus-visible {
+  outline: none;
 }
 
 /* КАТАЛОГ */
@@ -670,8 +688,17 @@ body {
   margin-right: 28px;
 }
 
-.breadcrumbs-link:hover {
-  color: rgba(255, 255, 255, 0.6);
+.breadcrumbs-link {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs-link:hover path {
+  fill: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus-visible {
+  outline: none;
 }
 
 .breadcrumbs-list:hover {
@@ -683,7 +710,7 @@ body {
 }
 
 .breadcrumbs-list:active {
-  color: rgb(255, 255, 255)4d
+  color: #ffffff
 }
 
 .breadcrumbs-list p {
@@ -728,18 +755,13 @@ body {
 }
 
 .catalog-filter-control:hover {
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
   opacity: 0.8;
 }
 
 .catalog-filter-control:active {
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
   opacity: 0.1;
-}
-
-.catalog-filter-control:focus-visible {
- color: rgba(255, 255, 255, 1);
- opacity: 0.1;
 }
 
 .marker {
@@ -781,12 +803,12 @@ body {
 }
 
 .input-price-control:hover {
-  background-color: rgba(230, 230, 230, 1);
+  background-color: #e6e6e6;
 }
 
 .input-price-control:focus {
-  background-color: rgba(230, 230, 230, 1);
-  outline: 3px solid rgba(131, 179, 211, 1);
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
 }
 
 .price-wrapper {
@@ -856,13 +878,16 @@ body {
   cursor: pointer;
 }
 
-.button-price:hover,
-.button-price:active {
-  outline: 2px solid rgba(131, 179, 211, 1);
+.button-price:hover {
+ outline: 3px solid #83b3d3;
 }
 
-.button-price:focus {
-  outline: 3px solid rgba(131, 179, 211, 1);
+.button-price:active {
+  outline: 2px solid #83b3d3;
+}
+
+.button-price:focus-visible {
+  outline: 3px solid #83b3d3;
 }
 
 
@@ -927,11 +952,12 @@ body {
 
 .catalog-filter-submit:focus-visible {
   background-color: #68a2ca;
+  outline: none;
 }
 
 .catalog-filter-submit:active {
   background-color: #82b3d3;
-  color: rgba(255, 255, 255, 0.302);
+  color: rgba(255, 255, 255, 0.30);
 }
 
 .catalog-filter-submit:disabled {
@@ -950,7 +976,7 @@ body {
 }
 
 .catalog-filter-reset:active {
-  color: rgba(255, 255, 255, 0.302)
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .catalog-filter-reset:disabled {
@@ -999,11 +1025,11 @@ body {
 
 .catalog-hotels-view:hover,
 .catalog-hotels-view:active {
-border: 2px solid rgba(0, 0, 0, 1);
+border: 2px solid #000000;
 }
 
 .catalog-hotels-view:focus {
-  outline: 2px solid rgba(104, 162, 202, 1);
+  outline: 2px solid #68a2ca;
   border: none;
 }
 
@@ -1036,12 +1062,12 @@ border: 2px solid rgba(0, 0, 0, 1);
 }
 
 .catalog-hotels-select:hover {
-  border: 2px solid rgba(104, 162, 202, 1);
+  border: 2px solid #68a2ca;
 }
 
-.catalog-hotels-select:focus {
-  outline: 2px solid rgba(104, 162, 202, 1);
-  border: none;
+.catalog-hotels-select:focus-visible {
+  border: 2px solid #68a2ca;
+  outline: none;
 }
 
 .catalog-hotels-select:disabled {
@@ -1121,11 +1147,12 @@ border: 2px solid rgba(0, 0, 0, 1);
 
 .catalog-hotels-details:focus-visible {
   background-color: #615048;
+  outline: none;
 }
 
 .catalog-hotels-details:active {
   background-color: #756157;
-  color: rgba(255, 255, 255, 0.302);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .catalog-hotels-details:disabled {
@@ -1153,11 +1180,12 @@ border: 2px solid rgba(0, 0, 0, 1);
 
 .catalog-hotels-favorites-button:focus-visible {
   background-color: #68a2ca;
+  outline: none;
 }
 
 .catalog-hotels-favorites-button:active {
   background-color: #82b3d3;
-  color: rgba(255, 255, 255, 0.302);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .catalog-hotels-favorites-button:disabled {
@@ -1170,15 +1198,16 @@ border: 2px solid rgba(0, 0, 0, 1);
 }
 
 .favorites-active:hover {
-  background-color: rgba(108, 158, 66, 1);
+  background-color: #6c9e42;
 }
 
 .favorites-active:focus-visible {
-  background-color: rgba(108, 158, 66, 1);
+  background-color: #6c9e42;
+  outline: none;
 }
 
 .favorites-active:active {
-  background-color: rgba(125, 181, 79, 1);
+  background-color: #7db54f;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1246,13 +1275,19 @@ border: 2px solid rgba(0, 0, 0, 1);
   border-radius: 4px;
 }
 
-.pages-item:not(:first-child):hover,
-.pages-item:not(:first-child):focus {
-  background-color: rgba(104, 162, 202, 1);
+.pages-item:not(:first-child):hover {
+  background-color: #68a2ca;
+}
+
+
+.pages-link:focus-visible {
+  background-color: #68a2ca;
+  outline: none;
+  border-radius: 4px;
 }
 
 .pages-item:not(:first-child):active {
-  background-color: rgba(130, 179, 211, 1);
+  background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1282,6 +1317,7 @@ border: 2px solid rgba(0, 0, 0, 1);
 }
 
 .pages-next {
+  list-style-type: none;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -1354,6 +1390,19 @@ border: 2px solid rgba(0, 0, 0, 1);
   right: 50px;
 }
 
+.modal-close-button:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:active img {
+  background-color: #e6e6e6;
+  color: #e6e6e6;
+}
+
+.modal-close-button:focus-visible {
+  outline: 3px solid #83b3d3;
+}
+
 .modal-title {
   font-weight: 700;
   font-size: 30px;
@@ -1382,15 +1431,14 @@ border: 2px solid rgba(0, 0, 0, 1);
   grid-column: 2 / -1;
 }
 
-.modal-input-check-in::after {
-  position: absolute;
-  top: 212px;
-  left: 229px;
-  content: "Мы не можем отправить вас в прошлое.";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  color: #ff5757;
+.modal-input-warning {
+position: absolute;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+color: #ff5757;
+right: 207px;
+top: 215px;
 }
 
 .modal-label-depart {
@@ -1403,16 +1451,15 @@ border: 2px solid rgba(0, 0, 0, 1);
   grid-column: 2 / -1;
 }
 
-.modal-input-depart::after {
-  content: "На эти даты есть свободные номера. Пока есть.";
+.modal-input-info {
   position: absolute;
-  bottom: 247px;
-  left: 229px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: #333333;
-}
+  right: 157px;
+  bottom: 242px;
+  }
 
 .modal-label {
   position: relative;
@@ -1437,6 +1484,14 @@ border: 2px solid rgba(0, 0, 0, 1);
   background-image: url("../images/date-icon.svg");
   background-repeat: no-repeat;
   background-position: 94% center;
+}
+
+.modal-input:focus-visible {
+  outline: 3px solid #82b3d3;
+}
+
+.modal-input:hover {
+  background-color: #e6e6e6;
 }
 
 input[type=date]::-webkit-calendar-picker-indicator {
@@ -1493,7 +1548,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .button-child-pluse {
   bottom: 186px;
-  right: 82px;
+  right: 88px;
 }
 
 .tooltip {
@@ -1559,8 +1614,16 @@ input[type=date]::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }
 
-.button-counter:hover {
-  stroke: rgba(0, 0, 0, 1);
+.button-counter:hover path {
+  fill: #000000;
+}
+
+.button-counter:active path {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+.button-counter:focus-visible {
+  outline: 2px solid #82b3d3;
 }
 
 .input-control {
@@ -1574,6 +1637,14 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-size: 18px;
   line-height: 20px;
   text-align: center;
+}
+
+.input-control:focus {
+outline: 2px solid #82b3d3;
+}
+
+.input-control:hover {
+  background-color: #e6e6e6;
 }
 
 .button-modal-find {
@@ -1610,6 +1681,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
   color: #ffffff
 }
 
-.modal-container-close {
-  display: none;
+.button-modal-find:focus-visible {
+  outline: none;
 }
+
+/* .modal-container-close {
+  display: none;
+} */

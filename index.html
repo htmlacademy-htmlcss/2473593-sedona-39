@@ -133,7 +133,8 @@
           <form action="https://echo.htmlacademy.ru/" method="post" class="subscription-form">
             <label>
               <span class="visually-hidden">E-mail</span>
-              <input type="email" class="subscription-email" name="subscription-email" placeholder="Ваш e-mail">
+              <input type="email" class="subscription-email" name="subscription-email" required
+                placeholder="Ваш e-mail">
             </label>
             <button class="subscription-button" type="submit">Подписаться</button>
           </form>
@@ -156,10 +157,10 @@
           <li class="social-item">
             <a href="https://t.me/htmlacademy" class="social-link">
               <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="16"
-                fill="none" viewBox="0 0 18 16">
-                <path fill="#83B3D3"
-                  d="M16.79.96.84 7.1c-1.09.44-1.08 1.05-.2 1.32l4.1 1.28 9.47-5.98c.44-.27.85-.13.52.17l-7.68 6.93-.28 4.22c.41 0 .6-.2.83-.41l1.99-1.94 4.13 3.06c.77.42 1.31.2 1.5-.71l2.72-12.8c.28-1.1-.43-1.61-1.16-1.28Z" />
-              </svg>
+              fill="none" viewBox="0 0 18 16">
+              <path fill="#83B3D3"
+                d="M16.79.96.84 7.1c-1.09.44-1.08 1.05-.2 1.32l4.1 1.28 9.47-5.98c.44-.27.85-.13.52.17l-7.68 6.93-.28 4.22c.41 0 .6-.2.83-.41l1.99-1.94 4.13 3.06c.77.42 1.31.2 1.5-.71l2.72-12.8c.28-1.1-.43-1.61-1.16-1.28Z" />
+            </svg>
               <span class="visually-hidden">Telegram</span>
             </a>
           </li>
@@ -176,7 +177,7 @@
         </ul>
         <a href="tel:+78128121212" class="phone-link">+7 (812) 812-12-12</a>
         <a href="https://htmlacademy.ru" class="htmlacademy-link">
-          <img src="images/logo_htmlacademy.svg" width="115" height="33" alt="Логотип HtmlAcademy">
+          <img src="../images/logo_htmlacademy.svg" alt="Логотип htmlacademy">
         </a>
       </footer>
     </div>
@@ -191,23 +192,25 @@
             <!-- заезд -->
             <label for="modal-input-check-in" class="modal-label modal-label-check-in">Дата Заезда:</label>
             <input type="date" class="modal-input modal-input-check-in" id="modal-input-check-in"
-              name="modal-input-check-in" value="2020-04-27">
+              name="modal-input-check-in" value="2020-04-27" required>
+            <span class="modal-input-warning">Мы не можем отправить вас в прошлое.</span>
             <!-- выезд -->
             <label for="modal-input-depart" class="modal-label modal-label-depart">Дата Выезда:</label>
             <input type="date" class="modal-input modal-input-depart" id="modal-input-depart" name="modal-input-depart"
-              value="2023-09-01">
+              value="2023-09-01" required>
+            <span class="modal-input-info">На эти даты есть свободные номера. Пока есть.</span>
             <!-- кол-во человек -->
             <!-- взрослые -->
             <label for="input-control" class="modal-label label-control-adults">Взрослые:</label>
             <div class="input-control-wrapper">
               <button class="button-counter button-adults-minus" type="button"><svg xmlns="http://www.w3.org/2000/svg"
-                  width="20" height="20" fill="none" viewBox="0 0 20 20">
+                  width="20" height="20" fill="#756157" viewBox="0 0 20 20">
                   <path fill="#756157" fill-opacity=".3" d="M3 9v2h14V9H3Z" />
                 </svg></button>
               <input type="text" class="input-control input-control-adults" name="input-control-adults"
-                id="input-control-adults" value="2">
+                id="input-control-adults" value="2" required>
               <button class="button-counter button-adults-pluse" type="button"><svg xmlns="http://www.w3.org/2000/svg"
-                  width="20" height="20" fill="none" viewBox="0 0 20 20">
+                  width="20" height="20" fill="#756157" viewBox="0 0 20 20">
                   <path fill="#756157" fill-opacity=".3" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
                 </svg></button>
             </div>
@@ -233,7 +236,7 @@
                   <path fill="#756157" fill-opacity=".3" d="M3 9v2h14V9H3Z" />
                 </svg></button>
               <input type="text" class="input-control input-control-child" name="input-control-child"
-                id="input-control-child" value="2">
+                id="input-control-child" value="2" required>
               <button class="button-counter button-child-pluse" type="button"><svg xmlns="http://www.w3.org/2000/svg"
                   width="20" height="20" fill="none" viewBox="0 0 20 20">
                   <path fill="#756157" fill-opacity=".3" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
