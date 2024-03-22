@@ -12,12 +12,13 @@
   <body>
     <div class="site-container">
       <header class="page-header" data-test="header">
-        <nav class="header-nav"><a href="index.html" class="nav-logo-link">
+        <a href="index.html" class="nav-logo-link">
           <img class="header-logo" src="images/logo.svg" width="140" height="70" alt="Логотип">
         </a>
+        <nav class="header-nav">
           <ul class="nav-list">
-            <li class="nav-item">
-              <a href="#" class="nav-item-link nav-active">Главная</a>
+            <li class="nav-item nav-active">
+              <a href="#" class="nav-item-link">Главная</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-item-link">О Седоне</a>
@@ -27,8 +28,8 @@
             </li>
           </ul>
           <ul class="nav-user">
-            <li class="nav-item-user">
-              <a href="#" class="nav-item-user-link nav-item-link-search">
+            <li class="nav-item nav-item-user">
+              <a href="#" class="nav-item-link nav-item-link-search">
                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                   fill="none" viewBox="0 0 20 20">
                   <path fill="#000"
@@ -37,8 +38,8 @@
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-            <li class="nav-item-user">
-              <a href="#" class="nav-item-user-link nav-item-link-favorite">
+            <li class="nav-item nav-item-user">
+              <a href="#" class="nav-item-link nav-item-link-favorite">
                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="17"
                   fill="none" viewBox="0 0 18 17">
                   <path fill="#000"
@@ -188,7 +189,7 @@
         </a>
       </footer>
     </div>
-    <div class="modal-container modal-container-close" data-test="modal">
+    <div class="modal-container" data-test="modal">
       <div class="modal modal-search">
         <button class="button modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
