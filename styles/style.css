@@ -73,6 +73,10 @@ img {
   padding: 0 70px;
 }
 
+.header-logo {
+  height: auto;
+}
+
 .nav-logo-link {
   margin-bottom: -10px;
 }
@@ -226,13 +230,13 @@ img {
 /* добро пожаловать в седону */
 .hero {
   padding-top: 51px;
-  background-color: #000000;
+  background-color: #bc987e;
   background-image: url("../images/divider.png"), url("../images/index-background.jpg");
   background-size: 100% auto, 100% 100%;
   background-repeat: no-repeat, no-repeat;
   background-position: bottom -1px center, center center;
   text-align: center;
-  height: 485px;
+  min-height: 485px;
   margin-bottom: 69px;
 }
 
@@ -504,7 +508,7 @@ img {
 
 /* подписка */
 .subscription {
-  background-color: #000000;
+  background-color: #47a76a;
   background-image: url("../images/subscribe.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1472,8 +1476,8 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
-  top: 63px;
-  right: 50px;
+  top: 65px;
+  right: 52px;
 }
 
 .modal-close-button:hover {
@@ -1501,8 +1505,7 @@ img {
 .modal-form {
   display: grid;
   grid-template-columns: 120px 180px 113px 110px;
-  grid-template-rows: 48px 48px 48px 60px;
-  row-gap: 48px;
+  grid-template-rows: 1fr;
   column-gap: 18px;
 }
 
@@ -1518,13 +1521,15 @@ img {
 }
 
 .modal-input-warning {
-  position: absolute;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: #ff5757;
-  right: 210px;
-  top: 215px;
+  margin-bottom: 24px;
+  width: 380px;
+  padding-top: 4px;
+  padding-left: 20px;
+  grid-column: 2 / 5;
 }
 
 .modal-label-depart {
@@ -1538,13 +1543,15 @@ img {
 }
 
 .modal-input-info {
-  position: absolute;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: #333333;
-  right: 160px;
-  bottom: 245px;
+  margin-bottom: 24px;
+  padding-top: 4px;
+  padding-left: 20px;
+  width: 380px;
+  grid-column: 2 / 5;
 }
 
 .modal-label {
@@ -1557,6 +1564,7 @@ img {
 }
 
 .modal-input {
+  position: relative;
   font-family: "PT Sans", "Arial", sans-serif;
   width: 440px;
   height: 48px;
@@ -1753,6 +1761,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 48px;
 }
 
 .button-modal-find:hover {
