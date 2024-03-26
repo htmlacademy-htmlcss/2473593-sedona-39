@@ -75,6 +75,7 @@ img {
 
 .header-logo {
   height: auto;
+  min-width: 138px;
 }
 
 .nav-logo-link {
@@ -232,7 +233,7 @@ img {
   padding-top: 51px;
   background-color: #bc987e;
   background-image: url("../images/divider.png"), url("../images/index-background.jpg");
-  background-size: 100% auto, 100% 100%;
+  background-size: 100% auto, cover;
   background-repeat: no-repeat, no-repeat;
   background-position: bottom -1px center, center center;
   text-align: center;
