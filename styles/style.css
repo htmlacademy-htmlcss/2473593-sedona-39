@@ -95,6 +95,7 @@ img {
 .nav-list {
   display: flex;
   flex-wrap: wrap;
+  max-width: 560px;
   flex-grow: 1;
   margin: 0;
   padding: 0;
